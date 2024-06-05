@@ -1,0 +1,124 @@
+.selectCurr {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.signUp-Currency {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.signUp-Currency .curr-submit {
+  background-color: #3498db;
+  color: #fff;
+  margin-top: 18px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.curr-Left {
+  width: 100%;
+  max-width: 600px;
+  padding: 3rem;
+  background-color: #e5f4ff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.currency-label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.currencySearch {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border: 2px solid #5cb6f2;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.alllistCurrencies {
+  max-height: 10rem;
+  overflow-y: auto;
+  border: 2px solid #5cb6f2;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.singleCurrList {
+  border-bottom: 1px solid #999a9b;
+}
+
+.singleCurrList:last-child {
+  border-bottom: none;
+}
+
+.curr-btn {
+  padding: 8px 16px;
+  width: 100%;
+  font-size: 16px;
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background-color: #e5f4ff;
+}
+
+.curr-btn:hover {
+  background: linear-gradient(to right, #85c0e8, #0077cc);
+  color: var(--bg-200);
+}
+
+.div-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.selectCurr .curr-submit {
+  background-color: #3498db;
+  color: #fff;
+  margin-top: 18px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.selectCurr .curr-submit:hover {
+  background-color: #2077b3;
+}
+
+.selectCurr h1 {
+  margin-top: 15px;
+}
+
+/*---Mobile ---*/
+@media screen and (max-width: 700px) {
+  .selectCurr {
+    width: 80%;
+  }
+
+  .currency-label {
+    font-size: 18px;
+  }
+
+  .selectCurr .curr-submit {
+    font-size: 12px;
+  }
+}

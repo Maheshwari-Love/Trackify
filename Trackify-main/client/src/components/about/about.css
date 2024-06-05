@@ -1,0 +1,151 @@
+.about-container {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.headline h1,
+.headline h2 {
+  font-size: 2rem;
+}
+
+.arrow-img {
+  width: 5rem;
+  padding-bottom: 3rem;
+}
+
+.reason {
+  font-size: 2rem;
+  padding-bottom: 4rem;
+  padding-top: 2.5rem;
+}
+
+.cards-container {
+  max-width: 70%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  background-color: var(--accent-100);
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 30%;
+}
+
+.graph-container {
+  background-color: white;
+  padding: 2rem;
+  margin-top: 0.7rem;
+  height: 276px;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  color: aqua;
+  padding: 1rem;
+}
+
+.card p {
+  color: var(--bg-200);
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 2rem;
+  text-align: start;
+}
+
+.imgOne {
+  width: 100%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.about-app {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+  padding: 5rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(160, 208, 240, 0.34),
+    #e0f2fe,
+    hsla(0, 0%, 100%, 0),
+    rgba(160, 208, 240, 0.34)
+  );
+}
+
+.about-app-title span {
+  background-image: linear-gradient(
+    to right,
+    rgba(12, 100, 242, 0.438),
+    rgb(63, 81, 181)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-app-title {
+  margin-bottom: 2rem;
+  font-size: 36px;
+}
+
+.about-app-p {
+  max-width: 90ch;
+  text-align: left;
+  margin: 0 auto;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+}
+
+.about-app-p strong {
+  color: #3f51b5;
+}
+
+/* Mobile */
+@media screen and (max-width: 760px) {
+  .about-container {
+    padding-top: 1rem;
+  }
+
+  .cards-container {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .card h2 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .imgOne {
+    width: 90%;
+  }
+
+  .graph-container {
+    height: 200px;
+  }
+}

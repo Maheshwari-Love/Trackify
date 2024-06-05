@@ -1,0 +1,107 @@
+.Settings {
+  display: flex;
+  height: 100vh;
+}
+
+.SettingHero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 5rem;
+}
+
+.SettingHero h1 {
+  text-align: center;
+}
+
+.mainSettings .settings-spacebtwn {
+  display: flex;
+}
+
+.mainSettings .sub-settings {
+  margin: 1rem 0 0 9rem;
+}
+
+.mainSettings {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  margin-left: 15rem;
+  gap: 5rem;
+}
+
+.SettingHero .settings-ul {
+  list-style-type: none;
+}
+
+.SettingHero .settings-btn,
+.SettingHero .settings-btn-dark-ligth {
+  border: none;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: var(--primary-100);
+  color: var(--bg-200);
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.SettingHero .settings-btn:hover {
+  background-color: #2a3f8f;
+  color: var(--bg-200);
+}
+
+/*--- Mobile ---*/
+@media screen and (max-width: 760px) {
+  .SettingHero {
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 9rem;
+    width: 100%;
+  }
+
+  .settings-spacebtwn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Settings .settings-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .mainSettings {
+    flex-direction: column;
+    padding: 0rem;
+    margin-left: 0rem;
+    width: 100%;
+  }
+
+  .SettingHero .settings-btn {
+    font-size: 12px;
+    margin: 0;
+    padding: 0.8rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+  }
+
+  .SettingHero .settings-btn-dark-ligth {
+    font-size: 12px;
+    margin: 0;
+    padding: 1.2rem 0.8rem;
+    width: 7rem;
+    border-radius: 0.5rem;
+  }
+
+  .mainSettings .sub-settings {
+    margin: 4rem 1rem;
+  }
+}

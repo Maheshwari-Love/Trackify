@@ -1,0 +1,116 @@
+.showExpenses {
+  width: 100%;
+}
+
+.showExpenses button {
+  background-color: #f37676;
+  color: var(--bg-100);
+  border: none;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.showExpenses button:hover {
+  background-color: #d32f2f;
+}
+
+.showExpenses .showExpTable {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+  border-collapse: collapse;
+  font-size: 1rem;
+  box-shadow: 1px 1px 10px 2px rgb(145, 142, 142);
+  position: relative;
+}
+
+.showExpenses .showExpTable thead {
+  position: sticky;
+  top: 0;
+  background-color: var(--primary-200);
+  color: var(--bg-100);
+  z-index: 1;
+}
+
+.showExpenses .showExpTable tbody tr td {
+  text-align: center;
+}
+
+.showExpenses .showExpTable thead th {
+  padding: 1rem;
+  text-align: center;
+  color: var(--bg-100);
+  background-color: var(--primary-200);
+}
+
+.showExpenses table th {
+  position: sticky;
+  top: 0;
+}
+
+.showExpenses .expenseTableImage {
+  width: 30px;
+  height: 30px;
+}
+
+/*-- MOBILE --*/
+@media (max-width: 760px) {
+  .showExpenses {
+    width: 100%;
+    margin: 0;
+  }
+  .showExpenses .showExpTable {
+    width: 100%;
+    font-size: 0.8rem;
+    border-collapse: collapse;
+    border-radius: 1rem;
+  }
+
+  .showExpenses .showExpTable thead .expTableHead {
+    width: 1rem;
+  }
+  .showExpenses .showExpTable thead th {
+    padding: 0.2rem;
+    border-collapse: collapse;
+    width: 1%;
+    color: var(--bg-100);
+    background-color: var(--primary-200);
+  }
+
+  .showExpenses .showExpTable td {
+    padding: 0.2rem;
+  }
+  .showExpenses .expenseTableImage {
+    width: 20px;
+    height: 20px;
+  }
+
+  .showExpenses button {
+    background-color: #f37676;
+    color: transparent;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 1.5;
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+    position: relative; /* muss relative */
+  }
+
+  .showExpenses button:before {
+    content: "x";
+    color: white;
+    position: absolute; /* muss absolut */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,84 @@
+.landingNav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  z-index: 100;
+  padding: 5px 50px;
+  background-color: var(--accent-100);
+}
+
+.landingNavBar {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landingNavList {
+  display: flex;
+  list-style: none;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.landingNavBar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-100);
+  transition: color 0.3s ease;
+}
+.landingNavBar a:hover {
+  color: aqua;
+}
+
+.landingNavBar a:first-child:hover {
+  border-bottom: none;
+}
+
+.logo-NavBar {
+  width: 90px;
+  height: auto;
+}
+
+.anchorLogo {
+  width: 100px;
+}
+
+.landingNavBar i {
+  font-size: 2rem;
+  margin-top: 0.2rem;
+}
+
+/*-- Mobile --*/
+@media screen and (max-width: 760px) {
+  .landingNav {
+    padding: 5px 10px;
+  }
+
+  .landingNavBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .landingNavBar a {
+    font-size: 1.2rem;
+  }
+
+  .landingNavBar ul {
+    justify-content: space-around;
+  }
+
+  .landingNavList {
+    width: 80%;
+  }
+
+  .landingNavBar i {
+    font-size: 1.5rem;
+    margin-top: 0rem;
+  }
+}

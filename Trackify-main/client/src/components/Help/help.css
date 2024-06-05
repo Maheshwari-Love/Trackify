@@ -1,0 +1,41 @@
+.Help {
+  display: flex;
+  height: 100vh;
+}
+
+.HelpHero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  background-color: var(--bg-200);
+}
+
+.questions {
+  width: 60%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.questions p {
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 760px) {
+  .HelpHero {
+    padding: 0.5rem;
+  }
+  .questions {
+    width: 90%;
+    margin-top: 3rem;
+  }
+  .questions h2 {
+    font-size: 1rem;
+  }
+  .questions p {
+    font-size: 0.8rem;
+  }
+}
