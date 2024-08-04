@@ -48,6 +48,12 @@ Steps to run this website in your local machine is as follows :
 
 ## :zap: Screenshots 📸
 <!-- add the screenshot of the project (Mandatory) -->
+<img src='./Trackify/client/public/images/login.png'>
+<img src='./Trackify/client/public/images/home.png'>
+<img src='./Trackify/client/public/images/dashboard.png'>
+<img src='./Trackify/client/public/images/addExpense.png'>
+<img src='./Trackify/client/public/images/history.png'>
+<img src='./Trackify/client/public/images/setting.png'>
 
 
 <!-- -------------------------------------------------------------------------------------------------------------- -->
